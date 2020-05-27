@@ -6,6 +6,18 @@
 	<version>1.0.0</version>
 	<packaging>war</packaging>
         <distributionManagement>
+	
+    <repository>
+        <id>central</id>
+        <name>nitish891c.mylabserver.com-releases</name>
+        <url>http://localhost:8081/artifactory/joshi-war</url>
+    </repository>
+    <snapshotRepository>
+        <id>central</id>
+        <name>nitish891c.mylabserver.com-snapshots</name>
+        <url>http://localhost:8081/artifactory/joshi-war</url>
+    </snapshotRepository>
+   </distributionManagement>
 	<dependency>
 	<groupId>org.sonarsource.scanner.maven</groupId>
 	<artifactId>sonar-maven-plugin</artifactId>
@@ -25,17 +37,6 @@
 	</properties>
 	</profile>
 	</profiles>
-    <repository>
-        <id>central</id>
-        <name>nitish891c.mylabserver.com-releases</name>
-        <url>http://localhost:8081/artifactory/joshi-war</url>
-    </repository>
-    <snapshotRepository>
-        <id>central</id>
-        <name>nitish891c.mylabserver.com-snapshots</name>
-        <url>http://localhost:8081/artifactory/joshi-war</url>
-    </snapshotRepository>
-   </distributionManagement>
 	<name>Hello World Web Application Repository</name>
 	<description>Simplest possible Java Webapp</description>
 
