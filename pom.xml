@@ -18,11 +18,13 @@
         <url>http://localhost:8081/artifactory/joshi-war</url>
         </snapshotRepository>
         </distributionManagement>
+	<dependencies>
 	<dependency>
 	<groupId>org.sonarsource.scanner.maven</groupId>
 	<artifactId>sonar-maven-plugin</artifactId>
 	<version>3.2</version>
 	</dependency>
+	</dependencies>
 	<profiles>
 	<profile>
 	<id>sonar</id>
